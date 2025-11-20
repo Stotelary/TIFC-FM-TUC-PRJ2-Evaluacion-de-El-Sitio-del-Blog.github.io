@@ -8,6 +8,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
+  padding-top: 55px; /* Mismo alto que tu navbar */
   color: #333;
 }
 
@@ -211,4 +212,42 @@ ul {
     .main-content {
         margin-top: 70px;
     }
+}
+#navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(111, 71, 212);
+  padding: 15px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+.navLink {
+    color: white !important;
+    margin: 0 45px;
+    text-decoration: none;
+    font-family:  sans-serif;
+    padding: 5px 10px;
+}
+
+.navLink:link, 
+.navLink:visited, 
+.navLink:hover {
+    color: white !important;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navLink.active {
+    background-color: #d35400 !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family:  sans-serif;
+    font-weight: bold;
+}
+
+.parraphCenter {
+    text-align: center;
 }
