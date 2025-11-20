@@ -69,11 +69,49 @@ ul {
 
 /* Footer */
 .footer {
-  background: #333;
-  color: white;
+  background-color: #d35400;   /* fondo naranja fuerte */
+  color: #fafafa;              /* texto principal claro */
+  padding: 2rem 1rem 1rem;
+  margin-top: 2rem;
+}
+
+.footer .container {
+  max-width: 960px;            /* ancho del contenido */
+  margin: 0 auto;              /* centra el contenido */
+}
+
+/* parte superior: texto + redes, en columnas */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;             /* se apila en pantallas pequeñas */
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;             /* cada sección ocupa mínimo 250px */
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.footer-section p {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9rem;
+  color: #ffe0b2;              /* texto secundario un poco más claro */
+}
+
+/* línea inferior de derechos reservados */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 224, 178, 0.6);
+  margin-top: 1.5rem;
+  padding-top: 0.75rem;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #fafafa;
 }
 
 
